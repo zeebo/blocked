@@ -49,6 +49,7 @@ func main() {
 		if len(bytes.TrimSpace(scanner.Bytes())) == 0 {
 			wc.Close()
 			cmd.Wait()
+			fmt.Println()
 			handle(initCmd())
 			continue
 		}
